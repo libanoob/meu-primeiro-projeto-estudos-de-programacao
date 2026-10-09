@@ -1,0 +1,48 @@
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.println("=== Seja bem vindo ao Economize ===");
+        int indice = 0;
+        double [] valores = new double [10];
+        int op = 0;
+        String[] produto = new String [10];
+        
+        do {
+            System.out.println("Produto que deseja adicionar: ");
+            produto[indice] = teclado.nextLine();
+            
+            
+            System.out.println (produto[indice] + " valor: ");
+            valores [indice] = teclado.nextDouble();
+            teclado.nextLine();
+            
+            indice++;
+            if (indice <10) {
+                System.out.println("Deseja adicionar mais algum produto?");
+            System.out.println("produtos adicionados ate o momento: " +indice);
+            System.out.println("1 - Sim");
+            System.out.println("2 - nao");
+            System.out.println("escolha: ");
+            op = teclado.nextInt();
+        teclado.nextLine();
+            
+        } else {
+                op =0;}
+            } while (op == 1);        
+         double total = 0;
+         
+        for (int i =0; i < indice; i++) {
+            System.out.println(produto[i] + ": " +valores[i]);
+        
+        total += valores[i];
+        }
+               
+        System.out.println("Sua Compra deu: " +total);
+        
+        if (total >=200) {
+            System.out.println("EU SOU RICAAA!!!"); }
+        else {
+            System.out.println("Bora economizar!");
+        }
+        }
+    }
+    
