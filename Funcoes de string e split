@@ -1,0 +1,34 @@
+// algumas funções de String
+        
+        String original = "abcde FGHIJ ABC abc DEFG        ";
+        String s02 = original.toUpperCase();
+        String s03 = original.trim();
+        String s04 = original.substring(2);
+        String s05 = original.substring(2, 9);
+        String s06 = original.replace('a', 'x');
+        String s07 = original.replace ("abc", "xy");
+        int i = original.indexOf("bc");
+        int j = original.lastIndexOf("bc");
+        
+        // aplicação
+        String s01 = original.toLowerCase();
+        System.out.println("Orginal: " +original);
+        System.out.println("modificada: " +s01);
+        System.out.println("modificada 2: -" +s02 +"   -");
+        System.out.println("Trim: " + s03);
+        System.out.println("substring: " +s04);
+        System.out.println("Substring: "+s05 );
+        System.out.println("Replace (a, x): " +s06);
+        System.out.println("Replace (abc, xy: " + s07);
+        System.out.println("IndexOf de (bc): " + i);
+        System.out.println("last indexOf de bc: " +j);
+        
+        //Operação Split
+        String s= "potato apple lemon";
+        String[] vect = s.split(" ");
+        System.out.println(vect[0]);
+            System.out.println(vect[1]);
+                System.out.println(vect[2]);
+    }
+    
+}
